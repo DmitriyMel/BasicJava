@@ -1,4 +1,4 @@
-package ua.org.nmu.dmelnikov;
+package ua.org.nmu.dmelnikov.lab_2;
 
 import java.util.Scanner;
 
