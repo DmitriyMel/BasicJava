@@ -3,9 +3,11 @@ package ua.org.nmu.dmelnikov.lab_2;
 import java.util.Scanner;
 
 public class Main {
+    private static final int RANDOM_MATRIX_CREATION = 1;
+    private static final int MANUAL_MATRIX_CREATION = 2;
     private static final int MAX_SIZE = 20;
-    private static final int MIN_RANDOM = 0;
-    private static final int MAX_RANDOM = 100;
+    private static final int MIN_RANDOM_ELEMENT_OF_ARRAY = 0;
+    private static final int MAX_RANDOM_ELEMENT_OF_ARRAY = 100;
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -17,18 +19,21 @@ public class Main {
         System.out.println("Enter the number of columns of the array(max size - " + MAX_SIZE + "): ");
         int columns = getValidRowsColumns(scanner);
 
-        System.out.print("Choose the method of creating an array: 1 - randomly, 2 - manually: ");
+        System.out.print("Choose the method of creating an array: "
+                + RANDOM_MATRIX_CREATION + " - randomly, "
+                + MANUAL_MATRIX_CREATION + " - manually: ");
 
         int method = scanner.nextInt();
         switch (method) {
-            case 1:
-                matrix =createRandomMatrix(rows, columns);
+            case RANDOM_MATRIX_CREATION:
+                matrix = createRandomMatrix(rows, columns);
                 break;
-            case 2:
+            case MANUAL_MATRIX_CREATION:
                 matrix = createMatrixManually(rows, columns, scanner);
                 break;
             default:
-                System.out.println("Invalid input! Choose between methods 1 and 2!");
+                System.out.println("Invalid input! Choose between methods " + RANDOM_MATRIX_CREATION +
+                        " and " + MANUAL_MATRIX_CREATION + "!");
                 scanner.next();
         }
 
@@ -53,10 +58,11 @@ public class Main {
         int size;
         while (true) {
             size = scanner.nextInt();
-            if (size >= MIN_RANDOM && size <= MAX_RANDOM) {
+            if (size >= MIN_RANDOM_ELEMENT_OF_ARRAY && size <= MAX_RANDOM_ELEMENT_OF_ARRAY) {
                 return size;
             } else {
-                System.out.println("Invalid row/column number! Minimum - " + MIN_RANDOM + ", maximum - " + MAX_RANDOM);
+                System.out.println("Invalid row/column number! Minimum - " + MIN_RANDOM_ELEMENT_OF_ARRAY +
+                        ", maximum - " + MAX_RANDOM_ELEMENT_OF_ARRAY);
             }
         }
     }
@@ -69,7 +75,9 @@ public class Main {
                 // Math.random() generates a value in the range [0, 1)
                 // Multiplying by (MAX_RANDOM - MIN_RANDOM + 1) scales it to [0, range_size]
                 // Adding MIN_RANDOM shifts it into the correct range
-                matrix[i][j] = (int) (Math.random() * (MAX_RANDOM - MIN_RANDOM + 1) + MIN_RANDOM);
+                matrix[i][j] = (int) (Math.random() *
+                        (MAX_RANDOM_ELEMENT_OF_ARRAY - MIN_RANDOM_ELEMENT_OF_ARRAY + 1)
+                        + MIN_RANDOM_ELEMENT_OF_ARRAY);
             }
         }
         return matrix;
@@ -122,7 +130,7 @@ public class Main {
 
     public static double findAverage(int[][] matrix) {
         double sum = 0;
-        int count =0;
+        int count = 0;
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
                 sum += matrix[i][j];
@@ -133,16 +141,16 @@ public class Main {
     }
 
     public static double findGeometricMean(int[][] matrix) {
-        double product = 1;
+        double productOfElements = 1;
         int count = 0;
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
-                product *= matrix[i][j];
+                productOfElements *= matrix[i][j];
                 count++;
             }
         }
-        // Calculate the geometric mean by taking the N-th root of the product where N is the total number of
-        // elements in the matrix
-        return Math.pow(product, 1.0 / count);
+        // Calculate the geometric mean by taking the N-th root of the productOfElements where N is
+        // the total number of elements in the matrix
+        return Math.pow(productOfElements, 1.0 / count);
     }
 }
