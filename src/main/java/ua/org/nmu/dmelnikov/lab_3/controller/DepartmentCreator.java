@@ -1,7 +1,7 @@
-package controller;
+package ua.org.nmu.dmelnikov.lab_3.controller;
 
-import model.Department;
-import model.Human;
+import ua.org.nmu.dmelnikov.lab_3.model.Department;
+import ua.org.nmu.dmelnikov.lab_3.model.Human;
 
 public class DepartmentCreator {
     public static Department createDepartment(String name, Human head) {

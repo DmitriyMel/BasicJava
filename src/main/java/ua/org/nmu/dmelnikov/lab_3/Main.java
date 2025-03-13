@@ -1,6 +1,6 @@
-package ua.org.nmu.dmelnikov;
+package ua.org.nmu.dmelnikov.lab_3;
 
-import controller.*;
+import ua.org.nmu.dmelnikov.lab_3.controller.TypicalUni;
 
 public class Main {
     public static void main(String[] args) {

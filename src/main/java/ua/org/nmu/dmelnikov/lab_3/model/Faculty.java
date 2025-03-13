@@ -1,10 +1,10 @@
-package model;
+package ua.org.nmu.dmelnikov.lab_3.model;
 
-public class Department implements Head {
+public class Faculty implements Head {
     private String name;
     private Human head;
 
-    public Department(String name, Human head) {
+    public Faculty(String name, Human head) {
         this.name = name;
         this.head = head;
     }
@@ -16,5 +16,6 @@ public class Department implements Head {
 
     @Override
     public void setHead(Human head) {
+
     }
 }
