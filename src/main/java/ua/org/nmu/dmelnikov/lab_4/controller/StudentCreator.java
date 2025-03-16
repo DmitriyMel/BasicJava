@@ -1,7 +1,7 @@
-package ua.org.nmu.dmelnikov.lab_3.controller;
+package ua.org.nmu.dmelnikov.lab_4.controller;
 
-import ua.org.nmu.dmelnikov.lab_3.model.Sex;
-import ua.org.nmu.dmelnikov.lab_3.model.Student;
+import ua.org.nmu.dmelnikov.lab_4.model.Sex;
+import ua.org.nmu.dmelnikov.lab_4.model.Student;
 
 public class StudentCreator {
     public static Student createStudent(String firstName, String lastName, String middleName, Sex sex) {

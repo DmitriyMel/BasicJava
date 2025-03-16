@@ -1,7 +1,7 @@
-package ua.org.nmu.dmelnikov.lab_3.controller;
+package ua.org.nmu.dmelnikov.lab_4.controller;
 
-import ua.org.nmu.dmelnikov.lab_3.model.University;
-import ua.org.nmu.dmelnikov.lab_3.model.Human;
+import ua.org.nmu.dmelnikov.lab_4.model.University;
+import ua.org.nmu.dmelnikov.lab_4.model.Human;
 public class UniCreator {
 
     public static University createUniversity(String name ,Human head) {

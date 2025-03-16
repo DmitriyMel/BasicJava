@@ -1,7 +1,7 @@
-package ua.org.nmu.dmelnikov.lab_3.controller;
+package ua.org.nmu.dmelnikov.lab_4.controller;
 
 
-import ua.org.nmu.dmelnikov.lab_3.model.*;
+import ua.org.nmu.dmelnikov.lab_4.model.*;
 
 public class TypicalUni {
 

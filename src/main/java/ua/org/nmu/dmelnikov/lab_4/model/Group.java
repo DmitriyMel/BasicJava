@@ -1,4 +1,4 @@
-package ua.org.nmu.dmelnikov.lab_3.model;
+package ua.org.nmu.dmelnikov.lab_4.model;
 
 public class Group implements Head {
     private String name;
