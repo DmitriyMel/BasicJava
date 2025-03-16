@@ -1,15 +1,25 @@
 package ua.org.nmu.dmelnikov.lab_4.model;
 
+import com.google.gson.annotations.Expose;
+
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class University {
+    @Expose
     private String name;
-    private Human head;
+    @Expose
+    private Rector head;
+    @Expose
+    private List<Faculty> facultyList;
 
-    public University(String name, Human head) {
+    public University(String name, Rector head, List<Faculty> facultyList) {
         this.name = name;
         this.head = head;
+        this.facultyList = new ArrayList<>();
     }
+
     @Override
     public boolean equals(Object obj) {
         if (this == obj) return true;  // Check if both references are the same
@@ -24,6 +34,7 @@ public class University {
     public int hashCode() {
         return Objects.hash(name, head);
     }
+
     @Override
     public String toString() {
         return "University{" +

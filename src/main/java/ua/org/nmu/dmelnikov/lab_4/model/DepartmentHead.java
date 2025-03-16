@@ -6,6 +6,7 @@ public class DepartmentHead extends Human {
     public DepartmentHead(String firstName, String lastName, String middleName, Sex sex) {
         super(firstName, lastName, middleName, sex);
     }
+
     @Override
     public boolean equals(Object obj) {
         if (this == obj) return true;

@@ -1,12 +1,12 @@
 package ua.org.nmu.dmelnikov.lab_4.model;
 
 import com.google.gson.annotations.JsonAdapter;
-import ua.org.nmu.dmelnikov.lab_4.controller.HumanAdapter;
+import ua.org.nmu.dmelnikov.lab_4.misc.HumanTypeAdapter;
 
 import java.util.Objects;
 
-@JsonAdapter(HumanAdapter.class) // Додаємо адаптер для класу Human
-public abstract class Human{
+@JsonAdapter(HumanTypeAdapter.class) // Add adapter for Human
+public abstract class Human {
     protected String firstName;
     protected String lastName;
     protected String middleName;
@@ -22,25 +22,32 @@ public abstract class Human{
     public String getFirstName() {
         return firstName;
     }
+
     public String getLastName() {
         return lastName;
     }
+
     public String getMiddleName() {
         return middleName;
     }
+
     public Sex getSex() {
         return sex;
     }
+
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
+
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
     public void setMiddleName(String middleName) {
         this.middleName = middleName;
     }
-    public void setSex(Sex sex){
+
+    public void setSex(Sex sex) {
         this.sex = sex;
     }
 

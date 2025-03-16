@@ -1,21 +1,16 @@
 package ua.org.nmu.dmelnikov.lab_4.model;
 
-public class Group implements Head {
-    private String name;
-    private Human head;
+import java.util.List;
 
-    public Group(String name, Human head) {
+public class Group {
+    private String name;
+    private GroupHead head;
+    private List<Student> studentList;
+
+    public Group(String name, GroupHead head, List<Student> studentList) {
         this.name = name;
         this.head = head;
+        this.studentList = studentList;
     }
 
-    @Override
-    public Human getHead() {
-        return head;
-    }
-
-    @Override
-    public void setHead(Human head) {
-
-    }
 }

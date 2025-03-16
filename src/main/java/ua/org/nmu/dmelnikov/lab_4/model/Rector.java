@@ -2,10 +2,11 @@ package ua.org.nmu.dmelnikov.lab_4.model;
 
 import java.util.Objects;
 
-public class Rector extends Human{
+public class Rector extends Human {
     public Rector(String firstName, String lastName, String middleName, Sex sex) {
         super(firstName, lastName, middleName, sex);
     }
+
     @Override
     public boolean equals(Object obj) {
         if (this == obj) return true;
@@ -22,4 +23,15 @@ public class Rector extends Human{
     public int hashCode() {
         return Objects.hash(firstName, lastName, middleName, sex);
     }
+
+    @Override
+    public String toString() {
+        return "Rector{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", middleName='" + middleName + '\'' +
+                ", sex=" + sex +
+                '}';
+    }
+
 }

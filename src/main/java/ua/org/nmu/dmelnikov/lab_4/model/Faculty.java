@@ -1,21 +1,16 @@
 package ua.org.nmu.dmelnikov.lab_4.model;
 
-public class Faculty implements Head {
-    private String name;
-    private Human head;
+import java.util.List;
 
-    public Faculty(String name, Human head) {
+public class Faculty {
+    private String name;
+    private Dean head;
+    private List<Department> departmentList;
+
+    public Faculty(String name, Dean head, List<Department> departmentList) {
         this.name = name;
         this.head = head;
+        this.departmentList = departmentList;
     }
 
-    @Override
-    public Human getHead() {
-        return head;
-    }
-
-    @Override
-    public void setHead(Human head) {
-
-    }
 }
