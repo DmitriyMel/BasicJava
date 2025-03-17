@@ -4,6 +4,6 @@ import ua.org.nmu.dmelnikov.lab_3.controller.TypicalUni;
 
 public class Main {
     public static void main(String[] args) {
-        TypicalUni.createUniversity();
+        TypicalUni.createUniversity();//comment for merging
     }
 }
