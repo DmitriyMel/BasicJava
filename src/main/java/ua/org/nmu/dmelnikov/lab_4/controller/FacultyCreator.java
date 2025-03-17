@@ -1,6 +1,8 @@
 package ua.org.nmu.dmelnikov.lab_4.controller;
 
-import ua.org.nmu.dmelnikov.lab_4.model.*;
+import ua.org.nmu.dmelnikov.lab_4.model.Dean;
+import ua.org.nmu.dmelnikov.lab_4.model.Department;
+import ua.org.nmu.dmelnikov.lab_4.model.Faculty;
 
 import java.util.List;
 

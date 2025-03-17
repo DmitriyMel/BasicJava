@@ -1,8 +1,8 @@
 package ua.org.nmu.dmelnikov.lab_4.test;
 
 import org.junit.Test;
-import ua.org.nmu.dmelnikov.lab_4.misc.JSONManager;
 import ua.org.nmu.dmelnikov.lab_4.controller.*;
+import ua.org.nmu.dmelnikov.lab_4.misc.JSONManager;
 import ua.org.nmu.dmelnikov.lab_4.model.*;
 
 import java.util.ArrayList;
