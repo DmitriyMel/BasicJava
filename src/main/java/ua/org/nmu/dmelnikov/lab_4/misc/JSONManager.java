@@ -1,7 +1,8 @@
 package ua.org.nmu.dmelnikov.lab_4.misc;
 
 import com.google.gson.*;
-import ua.org.nmu.dmelnikov.lab_4.model.*;
+import ua.org.nmu.dmelnikov.lab_4.model.Human;
+import ua.org.nmu.dmelnikov.lab_4.model.University;
 
 import java.io.FileReader;
 import java.io.FileWriter;
