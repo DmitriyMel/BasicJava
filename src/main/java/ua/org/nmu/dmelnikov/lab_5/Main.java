@@ -1,7 +1,7 @@
-package lab_5;
+package ua.org.nmu.dmelnikov.lab_5;
 
-import lab_5.db.StudentDAO;
-import lab_5.model.Student;
+import ua.org.nmu.dmelnikov.lab_5.db.StudentDAO;
+import ua.org.nmu.dmelnikov.lab_5.model.Student;
 
 import java.util.List;
 import java.util.Scanner;

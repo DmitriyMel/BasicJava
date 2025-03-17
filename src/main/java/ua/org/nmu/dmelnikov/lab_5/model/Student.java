@@ -1,4 +1,4 @@
-package lab_5.model;
+package ua.org.nmu.dmelnikov.lab_5.model;
 
 import java.sql.Date;
 

@@ -1,4 +1,4 @@
-package lab_5.db;
+package ua.org.nmu.dmelnikov.lab_5.db;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

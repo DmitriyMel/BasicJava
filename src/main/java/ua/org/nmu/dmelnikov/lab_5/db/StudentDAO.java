@@ -1,7 +1,7 @@
-package lab_5.db;
+package ua.org.nmu.dmelnikov.lab_5.db;
 
-import lab_5.model.Sex;
-import lab_5.model.Student;
+import ua.org.nmu.dmelnikov.lab_5.model.Sex;
+import ua.org.nmu.dmelnikov.lab_5.model.Student;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
