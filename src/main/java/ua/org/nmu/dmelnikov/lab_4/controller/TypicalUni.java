@@ -32,6 +32,6 @@ public class TypicalUni {
         Student student = StudentCreator.createStudent("Віктор", "Павлік", "Франкович", Sex.Male);
         students.add(student);
 
-        System.out.println("University" + university + " successfully created!");
+        System.out.println(university + " successfully created!");
     }
 }

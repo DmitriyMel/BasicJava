@@ -37,9 +37,7 @@ public class University {
 
     @Override
     public String toString() {
-        return "University{" +
-                "name='" + name + '\'' +
-                ", head=" + head +
-                '}';
+        return "University '" +
+               name + '\'';
     }
 }
